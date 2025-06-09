@@ -9,25 +9,8 @@ docs = [
 cmd = "mkdocs build -c -s -v"
 
 ["mkdocs.yml"]
-theme={
-  name="readthedocs",
-  nav_style="dark",
-  highlightjs=true,
-  hljs_languages=[ "yaml", "rust" ],
-}
+theme={name="readthedocs", nav_style="dark", highlightjs=true, hljs_languages=[ "yaml", "rust" ]}
 plugins=[
-    { autorefs="" },
-    { mkdocstrings={
-            enabled=true,
-            enable_inventory=true,
-            default_handler="python",
-            handlers={
-                python={
-                    paths=["src"],
-                    docstring_style="numpy",
-                    show_if_no_docstring=true,
-                }
-            }
-        } 
-    }
+    { autorefs={} },
+    { mkdocstrings={ enabled=true, enable_inventory=true, default_handler="python", handlers={ python={ paths=["src"], docstring_style="numpy", show_if_no_docstring=true } } } }
 ]
