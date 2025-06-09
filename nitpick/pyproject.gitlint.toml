@@ -7,7 +7,7 @@ release = [
 ignore-merge-commits=true
 ignore-revert-commits=true
 fail-without-commits=true
-contrib=CT1
+contrib="CT1"
 
 [".gitlint".title-max-length]
 line-length=50
@@ -25,4 +25,4 @@ min-length=5
 ignore-merge-commits=true
 
 [".gitlint".contrib-title-conventional-commits]
-types = feat,fix,docs,chore,build,ci,qa,style,refactor,perf,test
+types=["feat","fix","docs","chore","build","ci","qa","style","refactor","perf","test"]
