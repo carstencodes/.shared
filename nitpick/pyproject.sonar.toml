@@ -1,3 +1,8 @@
+["pyproject.toml".tool.pdm.dev-dependencies]
+checkstyle = [
+    "pysonar>=1.0"
+]
+
 ["pyproject.toml".tool.sonar.log]
 level = "INFO"
 
