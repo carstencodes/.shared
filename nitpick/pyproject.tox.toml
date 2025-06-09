@@ -12,18 +12,11 @@ isolated_build = true
 skipsdist = true
 
 ["pyproject.toml".tool.tox.testenv]
-setenv={
-  PDM_IGNORE_SAVED_PYTHON=1
-}
+setenv={ PDM_IGNORE_SAVED_PYTHON = 1 }
 allowlist_externals=["mv", "mkdir", "pytest", "pdm", "python"]
 deps=["pdm"]
 recreate=true
 passenv=["PYTHONPATH"]
-commands=[
-    "pdm install --dev",
-    "pytest",
-]
-commands_pre=[
-    "mkdir -p {toxinidir}/results/{envname}"
-]
+commands=["pdm install --dev", "pytest"]
+commands_pre=["mkdir -p {toxinidir}/results/{envname}"]
 commands_post=["mv {toxinidir}/pytest.result.xml {toxinidir}/pytest.coverage.xml {toxinidir}dist/qa/results/{envname}/"]
