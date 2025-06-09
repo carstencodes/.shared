@@ -5,5 +5,5 @@ checkstyle = [
     "flake8-type-checking>=3.0.0",
 ]
 
-[tool.pdm.scripts]
+["pyproject.toml".tool.pdm.scripts]
 flake = "flake518 src/"
