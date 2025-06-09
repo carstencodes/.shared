@@ -1,0 +1,6 @@
+["pyproject.toml".tool.pdm]
+plugins = [
+    "pdm-audit",
+    "pdm-bump",
+    "pdm-sbom",
+]

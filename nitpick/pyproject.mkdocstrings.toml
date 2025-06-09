@@ -1,0 +1,33 @@
+["pyproject.toml".tool.pdm.dev-dependencies]
+docs = [
+    "mkdocs>=1.5.3",
+    "mkdocstrings[python]>=0.24.0",
+    "griffe-inherited-docstrings>=1.0.0",
+]
+
+["pyproject.toml".tool.pdm.scripts.docs]
+cmd = "mkdocs build -c -s -v"
+
+["mkdocs.yml"]
+theme={
+  name="readthedocs"
+  nav_style="dark"
+  highlightjs=true
+  hljs_languages= [ "yaml", "rust" ]
+}
+plugins=[
+    { "autorefs"={} },
+    { "mkdocstrings"={
+            enabled=true,
+            enable_inventory=true,
+            default_handler="python",
+            handlers={
+                python={
+                    paths=["src"],
+                    docstring_style="numpy",
+                    show_if_no_docstring=true,
+                }
+            }
+        } 
+    }
+]

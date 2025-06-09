@@ -1,0 +1,7 @@
+[nitpick]
+minimum_version = "0.35.0"
+
+[nitpick.files.present]
+".editorconfig" = "An editorconfig for formatting and code-style should be present"
+"LICENSE" = "Please provide a LICENSE file"
+"ReadMe.md" = "Please provide a ReadMe file"

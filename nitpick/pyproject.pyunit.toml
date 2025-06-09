@@ -1,0 +1,31 @@
+["pyproject.toml".tool.pdm.dev-dependencies]
+test = [
+    "pytest>=8.4.0",
+    "pytest-cov>=6.1.1",
+]
+
+["pyproject.toml".tool.pdm.scripts]
+
+["pyproject.toml".tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]
+junit_suite_name = "pdm-bump"
+pythonpath = [
+    "src",
+]
+minversion = "7.0.0"
+addopts = [
+    "--cache-clear",
+    "--junit-xml",
+    "pytest.result.xml",
+    "--cov=src",
+    "--cov-branch",
+    "--cov-report",
+    "xml:pytest.coverage.xml",
+    "--cov-report",
+    "term",
+]
+filterwarnings = [
+    "ignore::DeprecationWarning ",
+]

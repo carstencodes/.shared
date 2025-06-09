@@ -1,0 +1,5 @@
+["pyproject.toml".tool.tox]
+envlist = ["py39", "py310", "py311", "py312"]
+
+["pyproject.toml".tool.sonar.py]
+version = "3.10, 3.11, 3.12, 3.13, 3.14"

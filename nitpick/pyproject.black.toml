@@ -1,0 +1,13 @@
+["pyproject.toml".tool.pdm.dev-dependencies]
+formatting = [
+    "black>=25.1.0",
+]
+
+["pyproject.toml".tool.pdm.scripts]
+black = "black src/"
+
+["pyproject.toml".tool.black]
+line-length = 79
+target-version = [
+    "py39",
+]

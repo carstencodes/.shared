@@ -1,0 +1,17 @@
+
+["pyproject.toml".tool.pdm.dev-dependencies]
+checkstyle = [
+    "pylint>=3.3.7",
+]
+
+["pyproject.toml".tool.pdm.scripts]
+pylint = "pylint src/"
+
+["pyproject.toml".tool.pylint.MAIN]
+fail-under = 9
+
+["pyproject.toml".tool.pylint."MESSAGES CONTROL"]
+disable = [
+    "C0112",
+    "R0901",
+]

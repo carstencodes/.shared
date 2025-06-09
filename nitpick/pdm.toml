@@ -1,0 +1,7 @@
+["pdm.toml".python]
+use_venv = true
+
+["pdm.toml".venv]
+in_project = true
+backend = "venv"
+with_pip = true
