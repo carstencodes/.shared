@@ -2,26 +2,26 @@
 level = "INFO"
 
 ["pyproject.toml".tool.sonar.python.coverage]
-reportPaths = "dist/qa/pytest.cover*.xml"
+reportPaths = "dist/results/qa/pytest.coverage*.xml"
 
 ["pyproject.toml".tool.sonar.python.xunit]
-reportpath = "dist/qa/pytest.result.xunit*.xml"
+reportpath = "dist/results/qa/pytest.result.*xml"
 skipDetails = true
 
 ["pyproject.toml".tool.sonar.python.pylint]
-reportPaths = "metrics/pylint/**/*.*"
+reportPaths = "dist/results/metrics/pylint/**/*.*"
 
 ["pyproject.toml".tool.sonar.python.bandit]
-reportPaths = "metrics/bandit/**/*.*"
+reportPaths = "dist/results/metrics/bandit/**/*.*"
 
 ["pyproject.toml".tool.sonar.python.flake8]
-reportPaths = "metrics/flake8/**/*.*"
+reportPaths = "dist/results/metrics/flake8/**/*.*"
 
 ["pyproject.toml".tool.sonar.python.mypy]
-reportPaths = "metrics/mypy/**/*.*"
+reportPaths = "dist/results/metrics/mypy/**/*.*"
 
 ["pyproject.toml".tool.sonar.python.ruff]
-reportPaths = "metrics/ruff/**/*.*"
+reportPaths = "dist/results/metrics/ruff/**/*.*"
 
 ["pyproject.toml".tool.sonar.scm.exclusions]
 disabled = false

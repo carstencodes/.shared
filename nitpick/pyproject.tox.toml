@@ -18,5 +18,8 @@ deps=["pdm"]
 recreate=true
 passenv=["PYTHONPATH"]
 commands=["pdm install --dev", "pytest"]
-commands_pre=["mkdir -p {toxinidir}/results/{envname}"]
-commands_post=["mv {toxinidir}/pytest.result.xml {toxinidir}/pytest.coverage.xml {toxinidir}dist/qa/results/{envname}/"]
+commands_pre=["mkdir -p {toxinidir}/dist/qa/results/"]
+commands_post=[
+    "mv {toxinidir}/pytest.result.xml {toxinidir}dist/qa/results/pytest.results.{envname}.xml",
+    "mv {toxinidir}/pytest.coverage.xml {toxinidir}dist/qa/results/pytest.coverage.{envname}.xml"
+]
