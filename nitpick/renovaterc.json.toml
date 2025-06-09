@@ -13,7 +13,6 @@ commitMessageSuffix="Automatically created by mend renovate bot."
 draftPR=false
 enabled=true
 enabledManagers=["pep621","pyenv","github-actions"]
-ignoreDeps=[]
 osvVulnerabilityAlerts=true
 packageRules=[
     {
@@ -29,10 +28,10 @@ packageRules=[
         rangeStrategy="replace"
     }
 ]
-platformAutomerge=true,
-pruneBranchAfterAutomerge=true,
-pruneStaleBranches=true,
-rebaseWhen="behind-base-branch",
-timezone="Etc/UTC",
-updateLockFiles=true,
+platformAutomerge=true
+pruneBranchAfterAutomerge=true
+pruneStaleBranches=true
+rebaseWhen="behind-base-branch"
+timezone="Etc/UTC"
+updateLockFiles=true
 updateNotScheduled=true
