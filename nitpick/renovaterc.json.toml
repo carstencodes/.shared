@@ -12,12 +12,12 @@ assignees="""[
 ]"""
 assigneesFromCodeOwners="true"
 automerge="true"
-automergeStrategy="rebase"
-automergeType="branch"
-branchPrefix="renovate/"
+automergeStrategy=""""rebase""""
+automergeType=""""branch""""
+branchPrefix=""""renovate/""""
 commitBodyTable="true"
 commitMessagePrefix="chore(deps): "
-commitMessageSuffix="Automatically created by mend renovate bot."
+commitMessageSuffix=""""Automatically created by mend renovate bot.""""
 draftPR="false"
 enabled="true"
 enabledManagers="""[
@@ -25,7 +25,7 @@ enabledManagers="""[
     "pyenv",
     "github-actions"
 ]"""
-ignoreDeps=[]
+ignoreDeps="[]"
 osvVulnerabilityAlerts="true"
 packageRules="""[
   { "matchManagers": ["pep621"], "rangeStrategy": "bump" },
@@ -35,7 +35,7 @@ packageRules="""[
 platformAutomerge="true"
 pruneBranchAfterAutomerge="true"
 pruneStaleBranches="true"
-rebaseWhen="behind-base-branch"
-timezone="Etc/UTC"
+rebaseWhen=""""behind-base-branch""""
+timezone=""""Etc/UTC""""
 updateLockFiles="true"
 updateNotScheduled="true"
