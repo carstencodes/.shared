@@ -10,14 +10,14 @@ cmd = "mkdocs build -c -s -v"
 
 ["mkdocs.yml"]
 theme={
-  name="readthedocs"
-  nav_style="dark"
-  highlightjs=true
-  hljs_languages= [ "yaml", "rust" ]
+  name="readthedocs",
+  nav_style="dark",
+  highlightjs=true,
+  hljs_languages=[ "yaml", "rust" ],
 }
 plugins=[
-    { "autorefs"={} },
-    { "mkdocstrings"={
+    { autorefs={} },
+    { mkdocstrings={
             enabled=true,
             enable_inventory=true,
             default_handler="python",
